@@ -1,0 +1,49 @@
+/* structural css */
+
+.grid-wrapper {
+  display: grid;
+  width: 100vw;
+}
+
+/* left side CSS */
+
+.left-side {
+  padding: 25px;
+  width: 250px;
+  background-color: #c0cde0;
+  color: #4a4f56;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.left-side img{
+  display: block;
+  margin: auto;
+}
+
+.left-side h1 {
+  text-align: center;
+}
+
+/* right side CSS */
+
+.right-side {
+  color: #4a4f56;
+  padding: 25px;
+  grid-column-start: 2;
+}
+
+.right-side ul, .right-side>.roles, .right-side>.education {
+  display: inline-block;
+  margin: auto;
+  margin-left: 25px;
+  padding: 10px;
+  list-style: none;
+}
+
+.right-side h2{
+  text-align: right;
+  background-color: #c0cde0;
+  margin-left: 25px;
+  padding: 10px;
+}
