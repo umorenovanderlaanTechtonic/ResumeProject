@@ -1,8 +1,50 @@
-/* structural css */
+/*font options
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Comfortaa', cursive;
+
+    font-family: 'Fugaz One', cursive;
+
+*/
+
+/* structural & general css */
 
 .grid-wrapper {
   display: grid;
   width: 100vw;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1, h2 {
+  font-family: 'Fugaz One', cursive;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3, h4 {
+  font-family: 'Comfortaa', cursive;
+}
+
+p, ul, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #4a4f56;
+  text-transform: uppercase;
 }
 
 /* left side CSS */
@@ -16,6 +58,11 @@
   grid-column-end: 2;
 }
 
+.left-side p {
+  text-align: justify;
+  margin-top: 5px;
+}
+
 .left-side img{
   display: block;
   margin: auto;
@@ -25,6 +72,12 @@
   text-align: center;
 }
 
+.left-side h2 {
+  padding-bottom: -5px;
+  margin-bottom: -5px;
+}
+
+
 /* right side CSS */
 
 .right-side {
@@ -33,12 +86,19 @@
   grid-column-start: 2;
 }
 
+.right-side>.skills ul{
+   list-style: none;
+   margin-left: 25px;
+   padding-left: 20px;
+   padding-right: 100px;
+ }
+
 .right-side ul, .right-side>.roles, .right-side>.education {
   display: inline-block;
   margin: auto;
   margin-left: 25px;
   padding: 10px;
-  list-style: none;
+
 }
 
 .right-side h2{
@@ -46,4 +106,5 @@
   background-color: #c0cde0;
   margin-left: 25px;
   padding: 10px;
+  padding-right: 25px
 }
